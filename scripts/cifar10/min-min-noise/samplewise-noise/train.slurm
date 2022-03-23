@@ -22,7 +22,7 @@ poison_rate=1.0
 scripts_path=/content/drive/MyDrive/workspace/unlearnable-example/scripts/cifar10/min-min-noise/samplewise-noise
 
 # Run the job from this directory:
-cd /data/gpfs/projects/punim0784/min-min-noise
+# cd /data/gpfs/projects/punim0784/min-min-noise
 cd $scripts_path
 
 # Load EXP Setting
