@@ -11,15 +11,15 @@
 #SBATCH --mail-user=pineappleorcas@gmail.com
 
 # check that the script is launched with sbatch
-if [ "x$SLURM_JOB_ID" == "x" ]; then
-   echo "You need to submit your job to the queuing system with sbatch"
-   exit 1
-fi
+# if [ "x$SLURM_JOB_ID" == "x" ]; then
+#    echo "You need to submit your job to the queuing system with sbatch"
+#    exit 1
+# fi
 
 # Training Setting
-model_name=$1
-poison_rate=$2
-scripts_path=$3
+model_name=resenet18
+poison_rate=1.0
+scripts_path=/content/drive/MyDrive/workspace/unlearnable-example/scripts/cifar10/min-min-noise/samplewise-noise
 
 # Run the job from this directory:
 cd /data/gpfs/projects/punim0784/min-min-noise
